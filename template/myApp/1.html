@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<title></title>
+</head>
+<body>
+	<h1><center>Student Information</center></h1>
+	<table border="2">
+	<tr>
+		<td>Number</td>
+		<td>Name</td>
+		<td>Marks</td>
+	</tr>
+	{%for i in stud%}
+	<tr>
+		<td>{{i.number}}</td>
+		<td>{{i.name}}</td>
+		<td>{{i.marks}}</td>
+	</tr>
+	<style>
+		h1{
+			color: black;
+		}
+	table { 
+    width: 700px; 
+    margin: auto; 
+    text-align: center; 
+    table-layout: fixed; 
+} 
+  
+table, 
+td, 
+tr { 
+    padding: 12px; 
+    color: wheat; 
+    background: indigo; 
+    border: 1px solid black; 
+    border-collapse: collapse; 
+    font-size: 20px; 
+  }
+        </style>
+	
+	{%endfor%}
+</table>
+
+</body>
+</html>
